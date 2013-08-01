@@ -113,5 +113,6 @@
     <!-- Deprecated plugins element. REmove in 3.0 -->
     <plugins>
         <plugin name="cookieManager" value="CookieManager" onload="true"/>
+        <plugin name="ExternalFileUtil" value="CDVExternalFileUtil" onload="true"/>
     </plugins>
 </widget>

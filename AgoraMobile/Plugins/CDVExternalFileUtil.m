@@ -21,16 +21,14 @@
 @implementation CDVExternalFileUtil
 
 
-- (void) openWith:(NSMutableArray*)arguments withDict:(NSMutableDictionary*)options
+- (void) openWith:(CDVInvokedUrlCommand*)command
 {
-    CDVPluginResult* pluginResult;
-    NSString* callbackID = [arguments pop];
-    [callbackID retain];
+    CDVPluginResult* pluginResult = nil;
     
-    NSString *path = [arguments objectAtIndex:0];
+    NSString *path = [command.arguments objectAtIndex:0];
     [path retain];
     
-    NSString *uti = [arguments objectAtIndex:1];
+    NSString *uti = [command.arguments objectAtIndex:1];
     [uti retain];
     
     NSLog(@"path %@, uti:%@", path, uti);
@@ -50,23 +48,35 @@
     //[fileRemote writeToFile:localFile atomically:YES];
     //NSLog(@"Resource file '%@' has been written to the Documents directory from online", previewDocumentFileName);
     
+    if([uti isEqualToString:@"noUti"]){
+        pluginResult = [CDVPluginResult resultWithStatus:CDVCommandStatus_ERROR messageAsString:@"No external Application can open this file"];
+    }else{
     
-    // Get file again from Documents directory
-    NSURL *fileURL = [NSURL fileURLWithPath:path];
+        // Get file again from Documents directory
+        NSURL *fileURL = [NSURL fileURLWithPath:path];
+        
+        BOOL canOpen = NO;
+        
+        UIDocumentInteractionController *controller = [UIDocumentInteractionController  interactionControllerWithURL:fileURL];
+        [controller retain];
+        controller.delegate = self;
+        controller.UTI = uti;
+        
+        CDVViewController* cont = (CDVViewController*)[ super viewController ];
+        CGRect rect = CGRectMake(0, 0, cont.view.bounds.size.width, cont.view.bounds.size.height);
+        
+        canOpen = [controller presentOpenInMenuFromRect:rect inView:cont.view animated:YES];
+        
+        if(canOpen){
+            pluginResult = [CDVPluginResult resultWithStatus:CDVCommandStatus_OK messageAsString: @"Open File with external application success"];
+        }else{
+            pluginResult = [CDVPluginResult resultWithStatus:CDVCommandStatus_ERROR messageAsString:@"No external Application can open this file"];
+        }
+        
+    }
     
-    UIDocumentInteractionController *controller = [UIDocumentInteractionController  interactionControllerWithURL:fileURL];
-    [controller retain];
-    controller.delegate = self;
-    controller.UTI = uti;
+    [self.commandDelegate sendPluginResult:pluginResult callbackId:command.callbackId];
     
-    CDVViewController* cont = (CDVViewController*)[ super viewController ];
-    CGRect rect = CGRectMake(0, 0, cont.view.bounds.size.width, cont.view.bounds.size.height);
-    [controller presentOpenInMenuFromRect:rect inView:cont.view animated:YES];
-    
-    pluginResult = [CDVPluginResult resultWithStatus:CDVCommandStatus_OK messageAsString: @""];
-    [self writeJavascript: [pluginResult toSuccessCallbackString:callbackID]];
-    
-    [callbackID release];
     [path release];
     [uti release];
 }

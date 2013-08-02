@@ -18,27 +18,27 @@
  under the License.
 -->
 <widget xmlns     = "http://www.w3.org/ns/widgets"
-        id        = "io.cordova.helloCordova"
-        version   = "2.0.0">
-    <name>Hello Cordova</name>
+        id        = "no.uninett.agora.AgoraMobile"
+        version   = "0.1.0">
+    <name>Agora Mobile</name>
 
     <description>
-        A sample Apache Cordova application that responds to the deviceready event.
+        IOS Application based on Phonegap framework for UNINETT Agora Service
     </description>
 
-    <author href="http://cordova.io" email="dev@cordova.apache.org">
-        Apache Cordova Team
+    <author href="https://agora.uninett.no" email="bernt.skjemstad@uninett.no">
+        Agora Mobile Team
     </author>
 
     <access origin="*"/>
 
-    <!-- <content src="http://mysite.com/myapp.html" /> for external pages -->
+    <!-- for external pages -->
     <content src="src/app/index.html" />
 
     <!-- Preferences for iOS -->
     <preference name="AllowInlineMediaPlayback" value="false" />
     <preference name="AutoHideSplashScreen" value="true" />
-    <preference name="BackupWebStorage" value="cloud" />
+    <preference name="BackupWebStorage" value="local" />
     <preference name="DisallowOverscroll" value="true" />
     <preference name="EnableLocation" value="false" /><!-- DEPRECATED -->
     <preference name="EnableViewportScale" value="false" />

@@ -13,7 +13,7 @@
 
 - (void)deleteCookies:(CDVInvokedUrlCommand *)command
 {
-    NSLog(@"working in delete cookies in plugin");
+
     CDVPluginResult *pluginResult = nil;
     
     NSHTTPCookie *cookie;

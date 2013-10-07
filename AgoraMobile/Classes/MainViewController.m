@@ -74,11 +74,11 @@
         
         CGRect oldBounds = [self.view bounds];
         
-        CGRect newViewBounds = CGRectMake( 0, -10, oldBounds.size.width, oldBounds.size.height-20 );
-        CGRect newWebViewBounds = CGRectMake( 0, -20, oldBounds.size.width, oldBounds.size.height-40 );
+        CGRect newWebViewBounds = CGRectMake( 0, -20, oldBounds.size.width, oldBounds.size.height-20 );
+        CGRect newWebViewFrame = CGRectMake(0, 20, oldBounds.size.width, oldBounds.size.height-20);
         
-        [self.view setBounds:newViewBounds];
         [self.webView setBounds:newWebViewBounds];
+        [self.webView setFrame:newWebViewFrame];
         
     }
 

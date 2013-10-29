@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDESourceControlProjectFavoriteDictionaryKey</key>
+	<false/>
+	<key>IDESourceControlProjectIdentifier</key>
+	<string>DE052A2B-BF4F-4173-A1A2-285FE5382520</string>
+	<key>IDESourceControlProjectName</key>
+	<string>AgoraMobile</string>
+	<key>IDESourceControlProjectOriginsDictionary</key>
+	<dict>
+		<key>3FD45BB1-A0FD-490F-BC38-34F082A7924D</key>
+		<string>https://github.com/br1anchen/AgoraMobile_ios.git</string>
+		<key>CD2B2DFD-6DD9-49FB-B5D6-C3365462FF40</key>
+		<string>https://github.com/br1anchen/AgoraMobile_sharedWeb.git</string>
+	</dict>
+	<key>IDESourceControlProjectPath</key>
+	<string>AgoraMobile.xcodeproj/project.xcworkspace</string>
+	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
+	<dict>
+		<key>3FD45BB1-A0FD-490F-BC38-34F082A7924D</key>
+		<string>../..</string>
+		<key>CD2B2DFD-6DD9-49FB-B5D6-C3365462FF40</key>
+		<string>../../www/src</string>
+	</dict>
+	<key>IDESourceControlProjectURL</key>
+	<string>https://github.com/br1anchen/AgoraMobile_ios.git</string>
+	<key>IDESourceControlProjectVersion</key>
+	<integer>110</integer>
+	<key>IDESourceControlProjectWCCIdentifier</key>
+	<string>3FD45BB1-A0FD-490F-BC38-34F082A7924D</string>
+	<key>IDESourceControlProjectWCConfigurations</key>
+	<array>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.git</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>3FD45BB1-A0FD-490F-BC38-34F082A7924D</string>
+			<key>IDESourceControlWCCName</key>
+			<string>AgoraMobileIOS</string>
+		</dict>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.git</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>CD2B2DFD-6DD9-49FB-B5D6-C3365462FF40</string>
+			<key>IDESourceControlWCCName</key>
+			<string>src</string>
+		</dict>
+	</array>
+</dict>
+</plist>

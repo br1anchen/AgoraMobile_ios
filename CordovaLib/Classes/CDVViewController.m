@@ -141,7 +141,7 @@
     NSArray *vComp = [[UIDevice currentDevice].systemVersion componentsSeparatedByString:@"."];
     
     if ([[vComp objectAtIndex:0] intValue] >= 7) { // iOS 7 or above
-        newBounds = CGRectMake(0, 20, self.view.bounds.size.width, self.view.bounds.size.height);
+        newBounds = CGRectMake(0, 20, self.view.bounds.size.width, self.view.bounds.size.height-20);
     }else{
         newBounds = CGRectMake(0, 0, self.view.bounds.size.width, self.view.bounds.size.height);
     }
@@ -150,10 +150,12 @@
     
     if (showEvent) {
         newFrame.size.height -= keyboardFrame.size.height;
+        self.webView.scrollView.contentInset = UIEdgeInsetsMake(0, 0, -keyboardFrame.size.height, 0);
+    } else {
+        self.webView.scrollView.contentInset = UIEdgeInsetsMake(0, 0, 0, 0);
     }
     
     self.webView.frame = newFrame;
-    self.webView.scrollView.contentInset = UIEdgeInsetsMake(0, 0, -keyboardFrame.size.height, 0);
 }
 
 - (void)printDeprecationNotice

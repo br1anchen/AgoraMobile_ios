@@ -135,11 +135,23 @@
 
     CGRect keyboardFrame = [notif.userInfo[UIKeyboardFrameEndUserInfoKey] CGRectValue];
     keyboardFrame = [self.view convertRect:keyboardFrame fromView:nil];
-
-    CGRect newFrame = self.view.bounds;
+    
+    CGRect newBounds;
+    
+    NSArray *vComp = [[UIDevice currentDevice].systemVersion componentsSeparatedByString:@"."];
+    
+    if ([[vComp objectAtIndex:0] intValue] >= 7) { // iOS 7 or above
+        newBounds = CGRectMake(0, 20, self.view.bounds.size.width, self.view.bounds.size.height);
+    }else{
+        newBounds = CGRectMake(0, 0, self.view.bounds.size.width, self.view.bounds.size.height);
+    }
+    
+    CGRect newFrame = newBounds;
+    
     if (showEvent) {
         newFrame.size.height -= keyboardFrame.size.height;
     }
+    
     self.webView.frame = newFrame;
     self.webView.scrollView.contentInset = UIEdgeInsetsMake(0, 0, -keyboardFrame.size.height, 0);
 }

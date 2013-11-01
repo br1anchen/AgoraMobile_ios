@@ -163,7 +163,7 @@
 - (void)updateBounds
 {
     UIImage* img = _imageView.image;
-    CGRect imgBounds = CGRectMake(0, 0, img.size.width, img.size.height);
+    CGRect imgBounds = CGRectMake(0, 20, img.size.width, img.size.height);
 
     CGSize screenSize = [self.viewController.view convertRect:[UIScreen mainScreen].bounds fromView:nil].size;
 

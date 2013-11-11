@@ -19,7 +19,7 @@
 -->
 <widget xmlns     = "http://www.w3.org/ns/widgets"
         id        = "no.uninett.agora.AgoraMobile"
-        version   = "0.8.1">
+        version   = "0.8.2">
     <name>Agora Mobile</name>
 
     <description>
@@ -114,5 +114,6 @@
     <plugins>
         <plugin name="cookieManager" value="CookieManager" onload="true"/>
         <plugin name="ExternalFileUtil" value="CDVExternalFileUtil" onload="true"/>
+        <plugin name="EmailComposer" value="APPEmailComposer" onload="true"/>
     </plugins>
 </widget>

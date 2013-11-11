@@ -115,5 +115,6 @@
         <plugin name="cookieManager" value="CookieManager" onload="true"/>
         <plugin name="ExternalFileUtil" value="CDVExternalFileUtil" onload="true"/>
         <plugin name="EmailComposer" value="APPEmailComposer" onload="true"/>
+        <plugin name="ApplicationInfo" value="AppInfo" onload="true"/>
     </plugins>
 </widget>

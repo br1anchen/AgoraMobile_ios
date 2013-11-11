@@ -15,6 +15,7 @@
 		288765FD0DF74451002DB57D /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 288765FC0DF74451002DB57D /* CoreGraphics.framework */; };
 		29199EB71831519A004A2E89 /* MessageUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 29199EB61831519A004A2E89 /* MessageUI.framework */; };
 		29199EBA183154FF004A2E89 /* APPEmailComposer.m in Sources */ = {isa = PBXBuildFile; fileRef = 29199EB9183154FF004A2E89 /* APPEmailComposer.m */; };
+		29199EBD183178AE004A2E89 /* AppInfo.m in Sources */ = {isa = PBXBuildFile; fileRef = 29199EBC183178AE004A2E89 /* AppInfo.m */; };
 		29733445178AF289001F8857 /* CookieManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 29733444178AF289001F8857 /* CookieManager.m */; };
 		2975D3B017A7FBF200F47512 /* CDVExternalFileUtil.m in Sources */ = {isa = PBXBuildFile; fileRef = 2975D3AF17A7FBF200F47512 /* CDVExternalFileUtil.m */; };
 		301BF552109A68D80062928A /* libCordova.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 301BF535109A57CC0062928A /* libCordova.a */; };
@@ -77,6 +78,8 @@
 		29199EB61831519A004A2E89 /* MessageUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MessageUI.framework; path = System/Library/Frameworks/MessageUI.framework; sourceTree = SDKROOT; };
 		29199EB8183154FF004A2E89 /* APPEmailComposer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = APPEmailComposer.h; sourceTree = "<group>"; };
 		29199EB9183154FF004A2E89 /* APPEmailComposer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = APPEmailComposer.m; sourceTree = "<group>"; };
+		29199EBB183178AE004A2E89 /* AppInfo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AppInfo.h; sourceTree = "<group>"; };
+		29199EBC183178AE004A2E89 /* AppInfo.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AppInfo.m; sourceTree = "<group>"; };
 		2942431F17F03ECB007C4ED9 /* nb */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = nb; path = nb.lproj/Localizable.strings; sourceTree = "<group>"; };
 		29733443178AF289001F8857 /* CookieManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CookieManager.h; sourceTree = "<group>"; };
 		29733444178AF289001F8857 /* CookieManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CookieManager.m; sourceTree = "<group>"; };
@@ -271,6 +274,8 @@
 				29733444178AF289001F8857 /* CookieManager.m */,
 				2975D3AE17A7FBF200F47512 /* CDVExternalFileUtil.h */,
 				2975D3AF17A7FBF200F47512 /* CDVExternalFileUtil.m */,
+				29199EBB183178AE004A2E89 /* AppInfo.h */,
+				29199EBC183178AE004A2E89 /* AppInfo.m */,
 			);
 			name = Plugins;
 			path = AgoraMobile/Plugins;
@@ -440,6 +445,7 @@
 				1D60589B0D05DD56006BFB54 /* main.m in Sources */,
 				1D3623260D0F684500981E51 /* AppDelegate.m in Sources */,
 				302D95F114D2391D003F00A1 /* MainViewController.m in Sources */,
+				29199EBD183178AE004A2E89 /* AppInfo.m in Sources */,
 				29733445178AF289001F8857 /* CookieManager.m in Sources */,
 				29199EBA183154FF004A2E89 /* APPEmailComposer.m in Sources */,
 				2975D3B017A7FBF200F47512 /* CDVExternalFileUtil.m in Sources */,

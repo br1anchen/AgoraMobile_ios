@@ -25,3 +25,5 @@
 "timed recording complete" = "timed recording complete";
 // accessibility hint for display of recorded elapsed time
 "recorded time in minutes and seconds" = "recorded time in minutes and seconds";
+
+"loading" = "Loading...";

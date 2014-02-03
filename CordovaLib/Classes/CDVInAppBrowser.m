@@ -668,9 +668,10 @@
 {
     // loading url, start spinner, update back/forward
 
-    self.addressLabel.text = [NSString stringWithFormat:NSLocalizedString(@"loading", Nil)];
-    NSString * deviceLanguage = [[NSLocale preferredLanguages] objectAtIndex:0];
-    NSLog(@"%@",deviceLanguage);
+    //self.addressLabel.text = [NSString stringWithFormat:NSLocalizedString(@"loading", Nil)];
+    //NSString * deviceLanguage = [[NSLocale preferredLanguages] objectAtIndex:0];
+    //NSLog(@"%@",deviceLanguage);
+    self.addressLabel.text = @"...";
     self.backButton.enabled = theWebView.canGoBack;
     self.forwardButton.enabled = theWebView.canGoForward;
 

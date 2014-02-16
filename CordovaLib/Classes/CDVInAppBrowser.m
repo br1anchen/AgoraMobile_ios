@@ -671,7 +671,13 @@
     //self.addressLabel.text = [NSString stringWithFormat:NSLocalizedString(@"loading", Nil)];
     //NSString * deviceLanguage = [[NSLocale preferredLanguages] objectAtIndex:0];
     //NSLog(@"%@",deviceLanguage);
-    self.addressLabel.text = @"...";
+    NSString * osLanguage = [[NSLocale preferredLanguages] objectAtIndex:0];
+    if([osLanguage isEqualToString:@"en"]){
+        self.addressLabel.text = @"Loading...";
+    }else{
+        self.addressLabel.text = @"Laster...";
+    }
+    
     self.backButton.enabled = theWebView.canGoBack;
     self.forwardButton.enabled = theWebView.canGoForward;
 
@@ -694,7 +700,11 @@
 {
     // update url, stop spinner, update back/forward
 
-    self.addressLabel.text = [self.currentURL absoluteString];
+    //self.addressLabel.text = [self.currentURL absoluteString];
+    NSArray *parts = [[self.currentURL absoluteString] componentsSeparatedByString:@"/"];
+    NSString *filename = [parts objectAtIndex:[parts count]-1];
+    self.addressLabel.text = filename;
+    
     self.backButton.enabled = theWebView.canGoBack;
     self.forwardButton.enabled = theWebView.canGoForward;
 
@@ -727,8 +737,14 @@
     self.backButton.enabled = theWebView.canGoBack;
     self.forwardButton.enabled = theWebView.canGoForward;
     [self.spinner stopAnimating];
-
-    self.addressLabel.text = @"Load Error";
+    
+    NSString * osLanguage = [[NSLocale preferredLanguages] objectAtIndex:0];
+    if([osLanguage isEqualToString:@"en"]){
+        self.addressLabel.text = @"Load Error";
+    }else{
+        self.addressLabel.text = @"Feil ved innlasting";
+    }
+    
 
     [self.navigationDelegate webView:theWebView didFailLoadWithError:error];
 }

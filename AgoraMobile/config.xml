@@ -19,7 +19,7 @@
 -->
 <widget xmlns     = "http://www.w3.org/ns/widgets"
         id        = "no.uninett.agora.AgoraMobile"
-        version   = "0.8.10">
+        version   = "0.8.11">
     <name>Agora Mobile</name>
 
     <description>

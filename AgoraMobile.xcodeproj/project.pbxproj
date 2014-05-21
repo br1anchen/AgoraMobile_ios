@@ -17,12 +17,14 @@
 		29199EBD183178AE004A2E89 /* AppInfo.m in Sources */ = {isa = PBXBuildFile; fileRef = 29199EBC183178AE004A2E89 /* AppInfo.m */; };
 		293C03AD1883409600444EB1 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 293C03AB1883409600444EB1 /* Localizable.strings */; };
 		293C03B0188340A100444EB1 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 293C03AE188340A100444EB1 /* Localizable.strings */; };
+		2969A56D192D30E300752D0E /* BugSense-iOS.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 298EDD94192A31DF00BF66E8 /* BugSense-iOS.framework */; };
 		296CDD26183572EE00461606 /* agora_icon_29.png in Resources */ = {isa = PBXBuildFile; fileRef = 296CDD22183572EE00461606 /* agora_icon_29.png */; };
 		296CDD27183572EE00461606 /* agora_icon_58.png in Resources */ = {isa = PBXBuildFile; fileRef = 296CDD23183572EE00461606 /* agora_icon_58.png */; };
 		296CDD28183572EE00461606 /* agora_icon_80.png in Resources */ = {isa = PBXBuildFile; fileRef = 296CDD24183572EE00461606 /* agora_icon_80.png */; };
 		296CDD29183572EE00461606 /* agora_icon_120.png in Resources */ = {isa = PBXBuildFile; fileRef = 296CDD25183572EE00461606 /* agora_icon_120.png */; };
 		29733445178AF289001F8857 /* CookieManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 29733444178AF289001F8857 /* CookieManager.m */; };
 		2975D3B017A7FBF200F47512 /* CDVExternalFileUtil.m in Sources */ = {isa = PBXBuildFile; fileRef = 2975D3AF17A7FBF200F47512 /* CDVExternalFileUtil.m */; };
+		298EDD9A192A328E00BF66E8 /* libz.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 298EDD99192A328E00BF66E8 /* libz.dylib */; };
 		301BF552109A68D80062928A /* libCordova.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 301BF535109A57CC0062928A /* libCordova.a */; };
 		301BF5B5109A6A2B0062928A /* AddressBook.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 301BF5B4109A6A2B0062928A /* AddressBook.framework */; };
 		301BF5B7109A6A2B0062928A /* AddressBookUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 301BF5B6109A6A2B0062928A /* AddressBookUI.framework */; };
@@ -76,7 +78,7 @@
 		1D30AB110D05D00D00671497 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		1D3623240D0F684500981E51 /* AppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		1D3623250D0F684500981E51 /* AppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		1D6058910D05DD3D006BFB54 /* AgoraMobile.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AgoraMobile.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		1D6058910D05DD3D006BFB54 /* Agora Mobile.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Agora Mobile.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		1DF5F4DF0D08C38300B7A737 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		288765FC0DF74451002DB57D /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
 		29199EB61831519A004A2E89 /* MessageUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MessageUI.framework; path = System/Library/Frameworks/MessageUI.framework; sourceTree = SDKROOT; };
@@ -94,6 +96,8 @@
 		29733444178AF289001F8857 /* CookieManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CookieManager.m; sourceTree = "<group>"; };
 		2975D3AE17A7FBF200F47512 /* CDVExternalFileUtil.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CDVExternalFileUtil.h; sourceTree = "<group>"; };
 		2975D3AF17A7FBF200F47512 /* CDVExternalFileUtil.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CDVExternalFileUtil.m; sourceTree = "<group>"; };
+		298EDD94192A31DF00BF66E8 /* BugSense-iOS.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = "BugSense-iOS.framework"; path = "../../../../Downloads/BugSense 3.6/BugSense-iOS.framework"; sourceTree = "<group>"; };
+		298EDD99192A328E00BF66E8 /* libz.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libz.dylib; path = usr/lib/libz.dylib; sourceTree = SDKROOT; };
 		29B97316FDCFA39411CA2CEA /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		301BF52D109A57CC0062928A /* CordovaLib.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = CordovaLib.xcodeproj; path = CordovaLib/CordovaLib.xcodeproj; sourceTree = "<group>"; };
 		301BF56E109A69640062928A /* www */ = {isa = PBXFileReference; lastKnownFileType = folder; path = www; sourceTree = SOURCE_ROOT; };
@@ -137,6 +141,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2969A56D192D30E300752D0E /* BugSense-iOS.framework in Frameworks */,
+				298EDD9A192A328E00BF66E8 /* libz.dylib in Frameworks */,
 				29199EB71831519A004A2E89 /* MessageUI.framework in Frameworks */,
 				301BF5BF109A6A2B0062928A /* CoreLocation.framework in Frameworks */,
 				5AA0E66F1729F460000DC89A /* ImageIO.framework in Frameworks */,
@@ -178,7 +184,7 @@
 		19C28FACFE9D520D11CA2CBB /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				1D6058910D05DD3D006BFB54 /* AgoraMobile.app */,
+				1D6058910D05DD3D006BFB54 /* Agora Mobile.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -242,6 +248,8 @@
 		29B97323FDCFA39411CA2CEA /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				298EDD99192A328E00BF66E8 /* libz.dylib */,
+				298EDD94192A31DF00BF66E8 /* BugSense-iOS.framework */,
 				29199EB61831519A004A2E89 /* MessageUI.framework */,
 				5AEE5B34173C68D80009041E /* CoreLocation.framework */,
 				5AA0E66E1729F460000DC89A /* ImageIO.framework */,
@@ -337,7 +345,7 @@
 			);
 			name = AgoraMobile;
 			productName = AgoraMobile;
-			productReference = 1D6058910D05DD3D006BFB54 /* AgoraMobile.app */;
+			productReference = 1D6058910D05DD3D006BFB54 /* Agora Mobile.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -492,7 +500,14 @@
 				CLANG_ENABLE_OBJC_ARC = NO;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer: Armaz Mellati (8MTEYGN94G)";
-				COPY_PHASE_STRIP = NO;
+				COPY_PHASE_STRIP = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					/Volumes/Database/Downloads/BugSense,
+					3.6,
+					/Volumes/Database/Downloads/BugSense,
+					3.6,
+				);
 				GCC_DYNAMIC_NO_PIC = NO;
 				GCC_OPTIMIZATION_LEVEL = 0;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
@@ -501,7 +516,7 @@
 				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
 				INFOPLIST_FILE = "AgoraMobile/AgoraMobile-Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 5.1.1;
-				PRODUCT_NAME = AgoraMobile;
+				PRODUCT_NAME = "Agora Mobile";
 				PROVISIONING_PROFILE = "";
 				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "2600482B-2023-4F68-9E28-C3F825C85E73";
 				TARGETED_DEVICE_FAMILY = 1;
@@ -517,15 +532,22 @@
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution: UNINETT AS (Z9P3BB4XXQ)";
 				COPY_PHASE_STRIP = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					/Volumes/Database/Downloads/BugSense,
+					3.6,
+					/Volumes/Database/Downloads/BugSense,
+					3.6,
+				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "AgoraMobile/AgoraMobile-Prefix.pch";
 				GCC_THUMB_SUPPORT = NO;
 				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
 				INFOPLIST_FILE = "AgoraMobile/AgoraMobile-Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 5.1.1;
-				PRODUCT_NAME = AgoraMobile;
+				PRODUCT_NAME = "Agora Mobile";
 				PROVISIONING_PROFILE = "";
-				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "2600482B-2023-4F68-9E28-C3F825C85E73";
+				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "B5912BD7-7A55-4F52-B5A7-3CA373408A0D";
 				TARGETED_DEVICE_FAMILY = 1;
 				VALID_ARCHS = "armv7 armv7s arm64";
 			};

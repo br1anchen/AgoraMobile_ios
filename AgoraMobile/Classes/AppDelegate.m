@@ -29,6 +29,7 @@
 #import "MainViewController.h"
 
 #import <Cordova/CDVPlugin.h>
+#import <BugSense-iOS/BugSenseController.h>
 
 @implementation AppDelegate
 
@@ -63,6 +64,13 @@
  */
 - (BOOL)application:(UIApplication*)application didFinishLaunchingWithOptions:(NSDictionary*)launchOptions
 {
+    NSString *userIdentity = [NSString stringWithFormat:@"%@:%@", [[UIDevice currentDevice] name],[[UIDevice currentDevice] systemVersion]];
+    
+    [BugSenseController setUserIdentifier:userIdentity];
+    [BugSenseController setUsesProxy:YES];
+    
+    [BugSenseController sharedControllerWithBugSenseAPIKey:@"4d1636d2" userDictionary:nil sendImmediately:YES];
+    
     CGRect screenBounds = [[UIScreen mainScreen] bounds];
 
 #if __has_feature(objc_arc)

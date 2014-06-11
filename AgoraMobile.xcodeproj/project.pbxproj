@@ -15,6 +15,7 @@
 		29199EB71831519A004A2E89 /* MessageUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 29199EB61831519A004A2E89 /* MessageUI.framework */; };
 		29199EBA183154FF004A2E89 /* APPEmailComposer.m in Sources */ = {isa = PBXBuildFile; fileRef = 29199EB9183154FF004A2E89 /* APPEmailComposer.m */; };
 		29199EBD183178AE004A2E89 /* AppInfo.m in Sources */ = {isa = PBXBuildFile; fileRef = 29199EBC183178AE004A2E89 /* AppInfo.m */; };
+		291D40691938C0CC0029974E /* Crashlytics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 291D40681938C0CC0029974E /* Crashlytics.framework */; };
 		293C03AD1883409600444EB1 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 293C03AB1883409600444EB1 /* Localizable.strings */; };
 		293C03B0188340A100444EB1 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 293C03AE188340A100444EB1 /* Localizable.strings */; };
 		296CDD26183572EE00461606 /* agora_icon_29.png in Resources */ = {isa = PBXBuildFile; fileRef = 296CDD22183572EE00461606 /* agora_icon_29.png */; };
@@ -24,7 +25,6 @@
 		29733445178AF289001F8857 /* CookieManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 29733444178AF289001F8857 /* CookieManager.m */; };
 		2975D3B017A7FBF200F47512 /* CDVExternalFileUtil.m in Sources */ = {isa = PBXBuildFile; fileRef = 2975D3AF17A7FBF200F47512 /* CDVExternalFileUtil.m */; };
 		298EDD9A192A328E00BF66E8 /* libz.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 298EDD99192A328E00BF66E8 /* libz.dylib */; };
-		299F258D192E75D000E90C06 /* BugSense-iOS.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 298EDD94192A31DF00BF66E8 /* BugSense-iOS.framework */; };
 		301BF552109A68D80062928A /* libCordova.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 301BF535109A57CC0062928A /* libCordova.a */; };
 		301BF5B5109A6A2B0062928A /* AddressBook.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 301BF5B4109A6A2B0062928A /* AddressBook.framework */; };
 		301BF5B7109A6A2B0062928A /* AddressBookUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 301BF5B6109A6A2B0062928A /* AddressBookUI.framework */; };
@@ -86,6 +86,7 @@
 		29199EB9183154FF004A2E89 /* APPEmailComposer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = APPEmailComposer.m; sourceTree = "<group>"; };
 		29199EBB183178AE004A2E89 /* AppInfo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AppInfo.h; sourceTree = "<group>"; };
 		29199EBC183178AE004A2E89 /* AppInfo.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AppInfo.m; sourceTree = "<group>"; };
+		291D40681938C0CC0029974E /* Crashlytics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Crashlytics.framework; sourceTree = "<group>"; };
 		293C03AC1883409600444EB1 /* nb */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = nb; path = nb.lproj/Localizable.strings; sourceTree = "<group>"; };
 		293C03AF188340A100444EB1 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = Localizable.strings; sourceTree = "<group>"; };
 		296CDD22183572EE00461606 /* agora_icon_29.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = agora_icon_29.png; sourceTree = "<group>"; };
@@ -96,7 +97,6 @@
 		29733444178AF289001F8857 /* CookieManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CookieManager.m; sourceTree = "<group>"; };
 		2975D3AE17A7FBF200F47512 /* CDVExternalFileUtil.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CDVExternalFileUtil.h; sourceTree = "<group>"; };
 		2975D3AF17A7FBF200F47512 /* CDVExternalFileUtil.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CDVExternalFileUtil.m; sourceTree = "<group>"; };
-		298EDD94192A31DF00BF66E8 /* BugSense-iOS.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = "BugSense-iOS.framework"; path = "../../../../Downloads/BugSense 3.6/BugSense-iOS.framework"; sourceTree = "<group>"; };
 		298EDD99192A328E00BF66E8 /* libz.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libz.dylib; path = usr/lib/libz.dylib; sourceTree = SDKROOT; };
 		29B97316FDCFA39411CA2CEA /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		301BF52D109A57CC0062928A /* CordovaLib.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = CordovaLib.xcodeproj; path = CordovaLib/CordovaLib.xcodeproj; sourceTree = "<group>"; };
@@ -141,7 +141,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				299F258D192E75D000E90C06 /* BugSense-iOS.framework in Frameworks */,
+				291D40691938C0CC0029974E /* Crashlytics.framework in Frameworks */,
 				298EDD9A192A328E00BF66E8 /* libz.dylib in Frameworks */,
 				29199EB71831519A004A2E89 /* MessageUI.framework in Frameworks */,
 				301BF5BF109A6A2B0062928A /* CoreLocation.framework in Frameworks */,
@@ -248,8 +248,8 @@
 		29B97323FDCFA39411CA2CEA /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				291D40681938C0CC0029974E /* Crashlytics.framework */,
 				298EDD99192A328E00BF66E8 /* libz.dylib */,
-				298EDD94192A31DF00BF66E8 /* BugSense-iOS.framework */,
 				29199EB61831519A004A2E89 /* MessageUI.framework */,
 				5AEE5B34173C68D80009041E /* CoreLocation.framework */,
 				5AA0E66E1729F460000DC89A /* ImageIO.framework */,
@@ -337,6 +337,7 @@
 				1D60588D0D05DD3D006BFB54 /* Resources */,
 				1D60588E0D05DD3D006BFB54 /* Sources */,
 				1D60588F0D05DD3D006BFB54 /* Frameworks */,
+				291D40671938BFF30029974E /* ShellScript */,
 			);
 			buildRules = (
 			);
@@ -432,6 +433,19 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
+		291D40671938BFF30029974E /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "./Crashlytics.framework/run b8f0fbb347e4f8c395f7802aab4feb5374ddfd27 d74b6777f9bbafba4ff3520d368107e5f74ed659d82572fe6149b571cdf7073f";
+		};
 		304B58A110DAC018002A0835 /* Copy www directory */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -509,6 +523,9 @@
 					3.6,
 					/Volumes/Database/Downloads/BugSense,
 					3.6,
+					/Volumes/Database/Downloads/BugSense,
+					3.6,
+					"$(PROJECT_DIR)",
 				);
 				GCC_DYNAMIC_NO_PIC = NO;
 				GCC_OPTIMIZATION_LEVEL = 0;
@@ -520,7 +537,7 @@
 				IPHONEOS_DEPLOYMENT_TARGET = 5.1.1;
 				PRODUCT_NAME = "Agora Mobile";
 				PROVISIONING_PROFILE = "";
-				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "2600482B-2023-4F68-9E28-C3F825C85E73";
+				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "6B674F98-3770-4BE9-B8AE-38E7B9943E7D";
 				TARGETED_DEVICE_FAMILY = 1;
 				VALID_ARCHS = "armv7 armv7s arm64";
 			};
@@ -542,6 +559,9 @@
 					3.6,
 					/Volumes/Database/Downloads/BugSense,
 					3.6,
+					/Volumes/Database/Downloads/BugSense,
+					3.6,
+					"$(PROJECT_DIR)",
 				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "AgoraMobile/AgoraMobile-Prefix.pch";

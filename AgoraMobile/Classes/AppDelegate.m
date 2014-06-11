@@ -29,7 +29,8 @@
 #import "MainViewController.h"
 
 #import <Cordova/CDVPlugin.h>
-#import <BugSense-iOS/BugSenseController.h>
+//#import <BugSense-iOS/BugSenseController.h>
+#import <Crashlytics/Crashlytics.h>
 
 @implementation AppDelegate
 
@@ -64,12 +65,16 @@
  */
 - (BOOL)application:(UIApplication*)application didFinishLaunchingWithOptions:(NSDictionary*)launchOptions
 {
+    /*
     NSString *userIdentity = [NSString stringWithFormat:@"%@:%@", [[UIDevice currentDevice] name],[[UIDevice currentDevice] systemVersion]];
     
     [BugSenseController setUserIdentifier:userIdentity];
     [BugSenseController setUsesProxy:YES];
     
     [BugSenseController sharedControllerWithBugSenseAPIKey:@"4d1636d2" userDictionary:nil sendImmediately:YES];
+    */
+    
+    [Crashlytics startWithAPIKey:@"b8f0fbb347e4f8c395f7802aab4feb5374ddfd27"];
     
     CGRect screenBounds = [[UIScreen mainScreen] bounds];
 

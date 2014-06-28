@@ -703,7 +703,7 @@
     //self.addressLabel.text = [self.currentURL absoluteString];
     NSArray *parts = [[self.currentURL absoluteString] componentsSeparatedByString:@"/"];
     NSString *filename = [parts objectAtIndex:[parts count]-1];
-    self.addressLabel.text = filename;
+    self.addressLabel.text = [filename stringByReplacingPercentEscapesUsingEncoding:NSUTF8StringEncoding];
     
     self.backButton.enabled = theWebView.canGoBack;
     self.forwardButton.enabled = theWebView.canGoForward;

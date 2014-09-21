@@ -153,7 +153,7 @@
         NSMutableDictionary* dict = nil;
         [command legacyArguments:&arguments andDict:&dict];
         // [obj performSelector:legacySelector withObject:arguments withObject:dict];
-        objc_msgSend(obj, legacySelector, arguments, dict);
+        ((void (*)(id, SEL, id))objc_msgSend)(obj, normalSelector, command);
     } else if ([obj respondsToSelector:normalSelector]) {
         // [obj performSelector:normalSelector withObject:command];
         //objc_msgSend(obj, normalSelector, command);

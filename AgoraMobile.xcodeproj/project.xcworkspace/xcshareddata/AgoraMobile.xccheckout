@@ -10,33 +10,33 @@
 	<string>AgoraMobile</string>
 	<key>IDESourceControlProjectOriginsDictionary</key>
 	<dict>
-		<key>3FD45BB1-A0FD-490F-BC38-34F082A7924D</key>
+		<key>3762C04C6604548F5710487AF10E53F0F83C2949</key>
 		<string>https://github.com/br1anchen/AgoraMobile_ios.git</string>
-		<key>CD2B2DFD-6DD9-49FB-B5D6-C3365462FF40</key>
+		<key>6F38A9DDD26B3F6DA2BC25C7E771EE06A8A9F6EB</key>
 		<string>https://github.com/br1anchen/AgoraMobile_sharedWeb.git</string>
 	</dict>
 	<key>IDESourceControlProjectPath</key>
 	<string>AgoraMobile.xcodeproj/project.xcworkspace</string>
 	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
 	<dict>
-		<key>3FD45BB1-A0FD-490F-BC38-34F082A7924D</key>
+		<key>3762C04C6604548F5710487AF10E53F0F83C2949</key>
 		<string>../..</string>
-		<key>CD2B2DFD-6DD9-49FB-B5D6-C3365462FF40</key>
+		<key>6F38A9DDD26B3F6DA2BC25C7E771EE06A8A9F6EB</key>
 		<string>../../www/src</string>
 	</dict>
 	<key>IDESourceControlProjectURL</key>
 	<string>https://github.com/br1anchen/AgoraMobile_ios.git</string>
 	<key>IDESourceControlProjectVersion</key>
-	<integer>110</integer>
+	<integer>111</integer>
 	<key>IDESourceControlProjectWCCIdentifier</key>
-	<string>3FD45BB1-A0FD-490F-BC38-34F082A7924D</string>
+	<string>3762C04C6604548F5710487AF10E53F0F83C2949</string>
 	<key>IDESourceControlProjectWCConfigurations</key>
 	<array>
 		<dict>
 			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
 			<string>public.vcs.git</string>
 			<key>IDESourceControlWCCIdentifierKey</key>
-			<string>3FD45BB1-A0FD-490F-BC38-34F082A7924D</string>
+			<string>3762C04C6604548F5710487AF10E53F0F83C2949</string>
 			<key>IDESourceControlWCCName</key>
 			<string>AgoraMobileIOS</string>
 		</dict>
@@ -44,7 +44,7 @@
 			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
 			<string>public.vcs.git</string>
 			<key>IDESourceControlWCCIdentifierKey</key>
-			<string>CD2B2DFD-6DD9-49FB-B5D6-C3365462FF40</string>
+			<string>6F38A9DDD26B3F6DA2BC25C7E771EE06A8A9F6EB</string>
 			<key>IDESourceControlWCCName</key>
 			<string>src</string>
 		</dict>

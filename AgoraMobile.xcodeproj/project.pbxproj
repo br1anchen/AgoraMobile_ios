@@ -355,7 +355,7 @@
 		29B97313FDCFA39411CA2CEA /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastUpgradeCheck = 0500;
+				LastUpgradeCheck = 0600;
 				TargetAttributes = {
 					1D6058900D05DD3D006BFB54 = {
 						DevelopmentTeam = Z9P3BB4XXQ;
@@ -512,19 +512,11 @@
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				CLANG_ENABLE_OBJC_ARC = NO;
-				CODE_SIGN_IDENTITY = "iPhone Developer";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer: Armaz Mellati (8MTEYGN94G)";
+				CODE_SIGN_IDENTITY = "iPhone Developer: Armaz Mellati (8MTEYGN94G)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				COPY_PHASE_STRIP = YES;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
-					/Volumes/Database/Downloads/BugSense,
-					3.6,
-					/Volumes/Database/Downloads/BugSense,
-					3.6,
-					/Volumes/Database/Downloads/BugSense,
-					3.6,
-					/Volumes/Database/Downloads/BugSense,
-					3.6,
 					"$(PROJECT_DIR)",
 				);
 				GCC_DYNAMIC_NO_PIC = NO;
@@ -536,8 +528,8 @@
 				INFOPLIST_FILE = "AgoraMobile/AgoraMobile-Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 5.1.1;
 				PRODUCT_NAME = "Agora Mobile";
-				PROVISIONING_PROFILE = "";
-				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "6B674F98-3770-4BE9-B8AE-38E7B9943E7D";
+				PROVISIONING_PROFILE = "ce90a910-a6ec-49cb-9014-9fec1b3503db";
+				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "ce90a910-a6ec-49cb-9014-9fec1b3503db";
 				TARGETED_DEVICE_FAMILY = 1;
 				VALID_ARCHS = "armv7 armv7s arm64";
 			};
@@ -548,19 +540,11 @@
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				CLANG_ENABLE_OBJC_ARC = NO;
-				CODE_SIGN_IDENTITY = "iPhone Developer";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution: UNINETT AS (Z9P3BB4XXQ)";
+				CODE_SIGN_IDENTITY = "iPhone Distribution: UNINETT AS (Z9P3BB4XXQ)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				COPY_PHASE_STRIP = YES;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
-					/Volumes/Database/Downloads/BugSense,
-					3.6,
-					/Volumes/Database/Downloads/BugSense,
-					3.6,
-					/Volumes/Database/Downloads/BugSense,
-					3.6,
-					/Volumes/Database/Downloads/BugSense,
-					3.6,
 					"$(PROJECT_DIR)",
 				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
@@ -570,8 +554,8 @@
 				INFOPLIST_FILE = "AgoraMobile/AgoraMobile-Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 5.1.1;
 				PRODUCT_NAME = "Agora Mobile";
-				PROVISIONING_PROFILE = "";
-				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "B5912BD7-7A55-4F52-B5A7-3CA373408A0D";
+				PROVISIONING_PROFILE = "e13f450b-3f46-4a0f-97a7-e17765a185f0";
+				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "e13f450b-3f46-4a0f-97a7-e17765a185f0";
 				TARGETED_DEVICE_FAMILY = 1;
 				VALID_ARCHS = "armv7 armv7s arm64";
 			};
@@ -585,8 +569,10 @@
 				CLANG_WARN_EMPTY_BODY = YES;
 				CLANG_WARN_ENUM_CONVERSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer: Armaz Mellati (8MTEYGN94G)";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				GCC_C_LANGUAGE_STANDARD = c99;
 				GCC_THUMB_SUPPORT = NO;
 				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
@@ -630,8 +616,10 @@
 				CLANG_WARN_EMPTY_BODY = YES;
 				CLANG_WARN_ENUM_CONVERSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution: UNINETT AS (Z9P3BB4XXQ)";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				GCC_C_LANGUAGE_STANDARD = c99;
 				GCC_THUMB_SUPPORT = NO;
 				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;

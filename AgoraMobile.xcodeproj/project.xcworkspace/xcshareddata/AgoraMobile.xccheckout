@@ -16,13 +16,13 @@
 		<string>https://github.com/br1anchen/AgoraMobile_sharedWeb.git</string>
 	</dict>
 	<key>IDESourceControlProjectPath</key>
-	<string>AgoraMobile.xcodeproj/project.xcworkspace</string>
+	<string>AgoraMobile.xcodeproj</string>
 	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
 	<dict>
 		<key>3762C04C6604548F5710487AF10E53F0F83C2949</key>
 		<string>../..</string>
 		<key>6F38A9DDD26B3F6DA2BC25C7E771EE06A8A9F6EB</key>
-		<string>../../www/src</string>
+		<string>../..www/src</string>
 	</dict>
 	<key>IDESourceControlProjectURL</key>
 	<string>https://github.com/br1anchen/AgoraMobile_ios.git</string>
